@@ -15,6 +15,7 @@
         <h1>b is max {{b}}</h1>
         {% endif %}
         ---->
+        <!---
         <h1>elif condition</h1>
         {% if a > b and a > c %}
         <h1>a value is max {{a}}</h1>
@@ -22,6 +23,21 @@
         <h1>b value is max {{b}}</h1>
         {% else %}
         <h1>c value is max {{c}}</h1>
+        {% endif %}
+        ----->
+        <h1>nested if else statements</h1>
+        {% if a > b %}
+           {%if a > c %}
+           <h1>a value is max {{a}}</h1>
+           {% else %}
+           <h1>c value is max {{c}}</h1>
+           {% endif %}
+        {% else %}
+           {% if b > c %}
+           <h1>b value is max {{b}}</h1>
+           {% else %}
+           <h1>c value is max {{c}}</h1>
+           {% endif %}
         {% endif %}
         
     </center>
