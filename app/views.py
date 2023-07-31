@@ -7,5 +7,5 @@ def data_render(request):
     return render(request,'data_render.html',context=d)
     
 def conditions(request):
-    d={'a':100,'b':600,'c':300}
+    d={'a':100,'b':600,'c':300,'name':'VASANTHA'}
     return render(request,'conditions.html',context=d)
